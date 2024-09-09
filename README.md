@@ -98,9 +98,9 @@ js
 const anotherthing = Symbol("anotherthing");
 const thirdthing = Symbol("thirdthing");
 class Stuff {
-    static Something: Object.freeze(new this());
+    static Something = Object.freeze(new this());
     
-    static AnotherThing: class {
+    static AnotherThing = class {
         static cmp(o) {
             return o?.tag === anotherthing;
         }
