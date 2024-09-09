@@ -11,8 +11,8 @@ fn main() {
         return;
     }
     let (test_name, output_name) = match &*args[1] {
-        "log" => ("consolelog.moon", "consolelog.js"),
-        _ => ("consolelog.moon", "consolelog.js"),
+        "log" => ("consolelog.idk", "consolelog.js"),
+        _ => ("consolelog.idk", "consolelog.js"),
     };
     let file_content = std::fs::read_to_string(format!("./tests/{}", test_name)).unwrap();
     match Transpiler::from_source(file_content) {
