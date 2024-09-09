@@ -139,7 +139,7 @@ switch(a) {
             println!("{:?}",a.data);
         else if(Stuff.TheThirdThing.cmp(a) && a instanceof Stuff.TheThirdThing)
             println!("{:?}", b.data);
-        else console.log("Probably imma find some way to throw before finish compile if happens to not handle everything");
+        else console.log("Probably imma find some way to throw before finish the transpilation when happens of not handling everything");
     }
 }
 
