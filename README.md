@@ -49,9 +49,9 @@ transforms to
 ```js
 js
 
-let a = 5;
-let b = a > 5 ? 12 : 2;
-let c;
+const a = 5; //rust lets are initially immutable
+const b = a > 5 ? 12 : 2;
+const c;
 if a < 5 {
     println!("Hello world 5 is bigger"); //println because the idea is another syntax, not to transform rust to js
     //rust is being used only to show things in it i pretend adding.
